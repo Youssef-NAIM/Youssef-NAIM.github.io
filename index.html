@@ -3,9 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Personal portfolio website for Youssef Naim" />
+        <meta name="description" content="Youssef Naim, Automation &amp; Mechatronics Engineer (Master's in Automation &amp; Robotics). PLC programming, MATLAB/Simulink control, multibody simulation and mobile robotics. Available immediately in France." />
         <meta name="author" content="Youssef Naim" />
-        <title>Youssef Naim - Portfolio</title>
+        <title>Youssef Naim | Automation &amp; Mechatronics Engineer</title>
+        <!-- Social sharing preview (LinkedIn, email, messaging apps)-->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Youssef Naim | Automation &amp; Mechatronics Engineer" />
+        <meta property="og:description" content="From specification to validated solution: PLCs, control laws, simulation and robotics. Available immediately." />
+        <meta property="og:url" content="https://youssef-naim.github.io/" />
+        <meta property="og:image" content="https://youssef-naim.github.io/assets/naim.PNG" />
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="assets/favicon.png" />
         <!-- Custom Google font-->
@@ -16,6 +22,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -26,10 +33,11 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/youssef-naim/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i><span class="d-lg-none ms-2">LinkedIn</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,12 +50,18 @@
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
                                 <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Automation &middot; Robotics &middot; Mechatronics</div></div>
-                                <div class="fs-3 fw-light text-muted">Graduate Mechatronics Engineer</div>
-                                <h1 class="display-3 fw-bolder mb-4"><span class="text-gradient d-inline">Designing intelligent solutions for real-world engineering challenges.</span></h1>
-                                <p class="lead text-muted mb-5">Specialized in automation and robotics, with a hands-on approach to developing and validating mechatronic systems. Open to permanent opportunities.</p>
+                                <div class="fs-3 fw-light text-muted">Automation &amp; Mechatronics Engineer</div>
+                                <h1 class="display-3 fw-bolder mb-4"><span class="text-gradient d-inline">From specification to validated solution.</span></h1>
+                                <p class="lead text-muted mb-4">Master's graduate in Automation &amp; Robotics (Mechatronics). I design, program and validate automated and mechatronic systems: Siemens and Schneider PLCs, MATLAB/Simulink control laws and system simulation.</p>
+                                <ul class="hero-facts small fw-bolder text-muted mb-5">
+                                    <li><i class="bi bi-check-circle-fill text-success me-1"></i>Available immediately</li>
+                                    <li><i class="bi bi-geo-alt-fill text-primary me-1"></i>Clermont-Ferrand &middot; mobile across France</li>
+                                    <li><i class="bi bi-briefcase-fill text-primary me-1"></i>Open to permanent positions</li>
+                                </ul>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="assets/CV_Youssef_Naim_EN.pdf">Download CV</a>
+                                    <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder" href="resume.html"><i class="bi bi-file-earmark-person me-2"></i>View Resume</a>
                                     <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                    <a class="btn btn-outline-primary btn-lg px-4 py-3 fs-6 fw-bolder" href="https://www.linkedin.com/in/youssef-naim/" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
                                 </div>
                             </div>
                         </div>
@@ -176,21 +190,111 @@
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
+            <!-- Key Results Section-->
             <section class="bg-light py-5">
+                <div class="container px-5 my-4">
+                    <div class="text-center mb-5">
+                        <h2 class="display-6 fw-bolder"><span class="text-gradient d-inline">Key results</span></h2>
+                        <p class="lead fw-light text-muted mb-0">What I have delivered on real systems</p>
+                    </div>
+                    <div class="row gx-4 gy-4">
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow rounded-4 h-100">
+                                <div class="card-body p-4">
+                                    <div class="stat-value"><span class="text-gradient d-inline">&lt; 1&deg;</span></div>
+                                    <div class="fw-bolder mb-2">Tilt error, for a &plusmn;2&deg; requirement</div>
+                                    <p class="text-muted small mb-3">Active stabilization of a sensor mast on a vineyard tractor: CATIA V5 and MSC Adams models, electric actuator sizing, IMU-based MATLAB/Simulink control validated in co-simulation.</p>
+                                    <div class="small fw-bolder text-primary">INRAE &middot; TSCF Research Unit</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow rounded-4 h-100">
+                                <div class="card-body p-4">
+                                    <div class="stat-value"><span class="text-gradient d-inline">AGV</span></div>
+                                    <div class="fw-bolder mb-2">Repaired on a customer site (DHL)</div>
+                                    <p class="text-muted small mb-3">Replaced the traction controller, then traced a failed encoder to a 5&nbsp;V supply instead of 12&nbsp;V. Replaced the encoder and interface board, updated the program and validated operation.</p>
+                                    <div class="small fw-bolder text-primary">Axter Automation</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow rounded-4 h-100">
+                                <div class="card-body p-4">
+                                    <div class="stat-value"><span class="text-gradient d-inline">2 PLCs</span></div>
+                                    <div class="fw-bolder mb-2">Siemens S7-1200 &amp; Schneider M340</div>
+                                    <p class="text-muted small mb-3">Grafcet design, TIA Portal and Control Expert programming, KTP700 operator HMI, and plant data shared over Modbus TCP/IP, Node-RED and MQTT.</p>
+                                    <div class="small fw-bolder text-primary">Engineering projects</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section-->
+            <section class="py-5">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                                <p class="lead fw-light mb-4">Mechatronics Engineer | Automation &amp; Robotics</p>
-                                <p class="text-muted">I am a graduate engineer with a Master's degree in Automation and Robotics, specializing in mechatronics from Clermont Auvergne University. I am looking to bring my skills to a permanent role in mechatronics, automation, robotics, or embedded systems.</p>
-                                <p class="text-muted">My experience combines system modeling, control development, and hands-on testing. For my final-year project with INRAE and Clermont Auvergne University, I worked on an active stabilization system for a vineyard tractor, from mechanical modeling and MATLAB/Simulink control to co-simulation and validation. I enjoy turning multidisciplinary engineering challenges into practical, reliable solutions.</p>
-                                <div class="d-flex justify-content-center gap-3">
-                                    <a class="btn btn-outline-primary px-4" href="contact.html">Get in touch</a>
-                                    <a class="btn btn-outline-dark px-4" href="assets/CV_Youssef_Naim_EN.pdf">View my CV</a>
+                                <p class="lead fw-light mb-4">Automation &amp; Mechatronics Engineer | Robotics</p>
+                                <p class="text-muted">I hold a Master's degree in Automation and Robotics (Mechatronics track) from Clermont Auvergne University. I like owning a system end to end: understanding the specification, modelling it, sizing the hardware, writing the control and proving on the bench or on site that it works.</p>
+                                <p class="text-muted">For my final-year internship at INRAE's TSCF research unit in Clermont-Ferrand, I worked on PhénoVigne: actively stabilizing a sensor mast mounted on a vineyard tractor. I built the CATIA V5 and MSC Adams models, sized the electric linear actuators and developed an IMU-based MATLAB/Simulink control law validated in Adams–Simulink co-simulation, reaching a tilt error below 1&deg; against a &plusmn;2&deg; requirement. Before that, at Axter Automation, I diagnosed and repaired an AGV on a customer site.</p>
+                                <p class="text-muted mb-4">I am looking for a permanent role as an automation, robotics or mechatronics engineer in design and development.</p>
+                                <ul class="tag-list justify-content-center mb-5">
+                                    <li class="tag">Siemens S7-1200 / TIA Portal</li>
+                                    <li class="tag">Schneider M340</li>
+                                    <li class="tag">Grafcet</li>
+                                    <li class="tag">HMI / SCADA</li>
+                                    <li class="tag">MATLAB / Simulink</li>
+                                    <li class="tag">MSC Adams</li>
+                                    <li class="tag">CATIA V5</li>
+                                    <li class="tag">ROS 1</li>
+                                    <li class="tag">Python &middot; C/C++</li>
+                                    <li class="tag">Modbus TCP/IP &middot; MQTT</li>
+                                    <li class="tag">PCB design</li>
+                                </ul>
+                                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                                    <a class="btn btn-primary px-4" href="resume.html">See my experience</a>
+                                    <a class="btn btn-outline-dark px-4" href="contact.html">Get in touch</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Recommendation Section-->
+            <section class="bg-light py-5">
+                <div class="container px-5 my-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <figure class="card border-0 shadow rounded-4 p-4 p-md-5 mb-0">
+                                <i class="bi bi-quote display-4 text-primary lh-1"></i>
+                                <blockquote class="blockquote fs-5 mb-4">
+                                    <p class="mb-0">&ldquo;Given the rigour, motivation, maturity and availability he showed during his internship, I recommend him today for a position in your company. [&hellip;] I support Youssef Naim without reservation.&rdquo;</p>
+                                </blockquote>
+                                <figcaption class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                                    <div>
+                                        <div class="fw-bolder">Bernard Benet</div>
+                                        <div class="small text-muted">Internship supervisor, INRAE TSCF Research Unit &middot; translated from French</div>
+                                    </div>
+                                    <a class="btn btn-outline-primary px-4 flex-shrink-0" href="assets/LettreRecommandation_Youssef-NAIM.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text me-2"></i>Read the full letter</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-5 fw-bolder mb-3">Hiring an automation or robotics engineer?</h2>
+                        <p class="lead mb-4">Available immediately, anywhere in France.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a class="btn btn-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://www.linkedin.com/in/youssef-naim/" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -207,6 +311,8 @@
                         <a class="small" href="projects.html">Projects</a>
                         <span class="mx-1">&middot;</span>
                         <a class="small" href="contact.html">Contact</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="footer-social" href="https://www.linkedin.com/in/youssef-naim/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>

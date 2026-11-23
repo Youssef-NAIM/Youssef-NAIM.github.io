@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Personal portfolio website for Youssef Naim" />
+        <meta name="description" content="Engineering projects by Youssef Naim: autonomous navigation of a LIMO robot with ROS, Siemens S7-1200 automation of a fischertechnik station, and a Modbus TCP/IP + MQTT industrial network." />
         <meta name="author" content="Youssef Naim" />
-        <title>Youssef Naim - Portfolio</title>
+        <title>Projects | Youssef Naim, Automation &amp; Mechatronics Engineer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="assets/favicon.png" />
         <!-- Custom Google font-->
@@ -16,6 +16,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -28,8 +29,9 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/youssef-naim/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i><span class="d-lg-none ms-2">LinkedIn</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,43 +40,97 @@
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                        <h1 class="display-5 fw-bolder mb-2"><span class="text-gradient d-inline">Projects</span></h1>
+                        <p class="lead text-muted mb-0">Hands-on work in mobile robotics, industrial automation and industrial networks</p>
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-12 col-xl-11 col-xxl-10">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <!-- Image en haut (meilleure UX) -->
-                                    <img class="img-fluid w-100" 
-                                        src="assets/IMG_20250125_043445.jpg" alt="Mapping and Autonomous Navigation">
-
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder mb-3"> Mapping and Autonomous Navigation with LIMO Robot</h2>
-                                        <p class="mb-4">In this project, I worked on enabling a LIMO mobile robot to autonomously explore and navigate through an unknown environment. Using ROS, I implemented SLAM with the GMapping package to allow the robot to build a real-time map of its surroundings. I then integrated AMCL for localization and move_base for path planning and obstacle avoidance.This project was a hands-on experience in robotics, combining perception, real-time decision-making, and autonomous movement. Watching the robot build its own map and navigate it on its own was both exciting and rewarding.</p>                                         
-                                        <!-- Bouton Vidéo -->
-                                        <a href="assets/Limo Project.mp4" target="_blank" class="btn btn-primary btn-lg px-5"> <i class="bi bi-play-circle me-2"></i>Watch Video Demo</a>
+                            <!-- Project 1: LIMO-->
+                            <article class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="row g-0">
+                                    <div class="col-lg-5 project-media">
+                                        <img src="assets/IMG_20250125_043445.jpg" alt="LIMO mobile robot used for SLAM mapping and autonomous navigation" loading="lazy" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="p-4 p-md-5">
+                                            <div class="small fw-bolder text-uppercase text-secondary mb-2">Mobile robotics &middot; 2024 – 2025</div>
+                                            <h2 class="h3 fw-bolder mb-3">Mapping &amp; Autonomous Navigation with a LIMO Robot</h2>
+                                            <p>Enabled a LIMO mobile robot to explore an unknown environment, build its own map and navigate it autonomously.</p>
+                                            <ul class="exp-list">
+                                                <li>Real-time mapping with <strong>2D LiDAR SLAM</strong> (GMapping) under <strong>ROS 1</strong> and Python.</li>
+                                                <li>Localization on the map with <strong>AMCL</strong>.</li>
+                                                <li>Path planning and obstacle avoidance with <strong>move_base</strong>.</li>
+                                            </ul>
+                                            <ul class="tag-list mb-4">
+                                                <li class="tag">ROS 1</li>
+                                                <li class="tag">Python</li>
+                                                <li class="tag">Linux</li>
+                                                <li class="tag">2D LiDAR</li>
+                                                <li class="tag">SLAM</li>
+                                                <li class="tag">AMCL</li>
+                                                <li class="tag">move_base</li>
+                                            </ul>
+                                            <a href="assets/Limo%20Project.mp4" target="_blank" rel="noopener" class="btn btn-primary px-4 py-2"><i class="bi bi-play-circle me-2"></i>Watch video demo</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                           <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <!-- Image en haut (meilleure UX) -->
-                                    <img class="img-fluid w-100" 
-                                        src="assets/Maquette MPS.jpeg" alt="MPS Model">
-
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder mb-3">Automation of a Fishertechnik Multi-Processing Station Model</h2>
-                                        <p class="mb-4">This project focused on implementing a complete automation solution for a Multi-Processing Station (MPS) of FisherTechnik, utilizing Siemens Simatic S7-1200 PLC and TIA Portal software for programming and control. The project was completed in two main phases:</p>
-                                        <p class="mb-4">1. Design and Build the Automation Solution: We began by analyzing the MPS system's functionality, understanding each process step, and identifying the necessary sensors and actuators. Based on this understanding, we programmed the Simatic S7-1200 PLC to orchestrate the automation sequence with precision.</p>
-                                        <p class="mb-4">2. Develop the Human-Machine Interface (HMI):In this phase, we focused on creating an intuitive and user-friendly interface for controlling the MPS model. The HMI included features like a start button, emergency stop, and status indicators. Every detail of the interface was designed to ensure smooth and natural interaction. The HMI was then uploaded to the KTP700 Basic module, thus bringing the system to life.</p>
-                                        <p class="mb-4">This project combined both automation programming and user interface design to enhance the operational efficiency and usability of the MPS system.</p>                                         
-                                        <!-- Bouton Vidéo -->
-                                        <a href="assets/Vidéo_maquette_FishetTechnik.mp4" target="_blank" class="btn btn-primary btn-lg px-5"> <i class="bi bi-play-circle me-2"></i>Watch Video Demo</a>
+                            </article>
+                            <!-- Project 2: fischertechnik MPS-->
+                            <article class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="row g-0">
+                                    <div class="col-lg-5 project-media">
+                                        <img src="assets/Maquette%20MPS.jpeg" alt="fischertechnik multi-processing station controlled by a Siemens S7-1200 PLC" loading="lazy" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="p-4 p-md-5">
+                                            <div class="small fw-bolder text-uppercase text-secondary mb-2">Industrial automation &middot; 2024</div>
+                                            <h2 class="h3 fw-bolder mb-3">Automation of a fischertechnik Multi-Processing Station</h2>
+                                            <p>Full automation of a multi-station processing model, from functional analysis to the operator interface.</p>
+                                            <ul class="exp-list">
+                                                <li>Analysed each process step and its sensors and actuators, then modelled the sequence in <strong>Grafcet</strong>.</li>
+                                                <li>Programmed a <strong>Siemens S7-1200</strong> PLC in <strong>TIA Portal</strong> to run the complete automation sequence.</li>
+                                                <li>Designed the operator <strong>HMI</strong> (start, emergency stop, status indicators), deployed it on a KTP700 Basic panel and ran functional tests.</li>
+                                            </ul>
+                                            <ul class="tag-list mb-4">
+                                                <li class="tag">Siemens S7-1200</li>
+                                                <li class="tag">TIA Portal</li>
+                                                <li class="tag">Grafcet</li>
+                                                <li class="tag">KTP700 HMI</li>
+                                                <li class="tag">Functional testing</li>
+                                            </ul>
+                                            <a href="assets/Vid%C3%A9o_maquette_FishetTechnik.mp4" target="_blank" rel="noopener" class="btn btn-primary px-4 py-2"><i class="bi bi-play-circle me-2"></i>Watch video demo</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
+                            <!-- Project 3: Modbus TCP/IP + MQTT-->
+                            <article class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="row g-0">
+                                    <div class="col-lg-5 project-media bg-gradient-primary-to-secondary d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-diagram-3 project-icon text-white" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="p-4 p-md-5">
+                                            <div class="small fw-bolder text-uppercase text-secondary mb-2">Industrial networks &middot; 2024</div>
+                                            <h2 class="h3 fw-bolder mb-3">Industrial Modbus TCP/IP Network with MQTT Data Sharing</h2>
+                                            <p>Connected a PLC to a lightweight supervision layer so that plant data can be shared in real time.</p>
+                                            <ul class="exp-list">
+                                                <li>Read a temperature measurement from a <strong>Schneider M340</strong> PLC over <strong>Modbus TCP/IP</strong>.</li>
+                                                <li>Centralized the data in <strong>Node-RED</strong> running on a Raspberry Pi.</li>
+                                                <li>Published it in real time over <strong>MQTT</strong>.</li>
+                                            </ul>
+                                            <ul class="tag-list mb-0">
+                                                <li class="tag">Schneider M340</li>
+                                                <li class="tag">Control Expert</li>
+                                                <li class="tag">Modbus TCP/IP</li>
+                                                <li class="tag">Node-RED</li>
+                                                <li class="tag">Raspberry Pi</li>
+                                                <li class="tag">MQTT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -83,8 +139,12 @@
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
                 <div class="container px-5 my-5">
                     <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                        <h2 class="display-5 fw-bolder mb-3">Let's build something together</h2>
+                        <p class="lead mb-4">Available immediately for automation, robotics and mechatronics roles.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a class="btn btn-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="resume.html">View resume</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -100,6 +160,8 @@
                         <a class="small" href="index.html">Home</a>
                         <span class="mx-1">&middot;</span>
                         <a class="small" href="contact.html">Contact</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="footer-social" href="https://www.linkedin.com/in/youssef-naim/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
